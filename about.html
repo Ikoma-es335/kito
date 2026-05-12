@@ -240,18 +240,13 @@
             <p class="access-note">※ 駐車場はございません。公共交通機関をご利用ください。<br>※ ワークショップのご予約・在庫確認はInstagramのDMまたはお電話にてどうぞ。</p>
           </div>
           <div class="access-map-wrap">
-            <iframe
-              title="K&amp;ito. 工房周辺地図（仙台市青葉区付近）"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=140.8580%2C38.2580%2C140.8780%2C38.2720&layer=mapnik&marker=38.2650%2C140.8680"
-              width="100%"
-              height="320"
-              style="border: 1px solid var(--color-border); border-radius: var(--radius-md);"
-              loading="lazy"
-              allowfullscreen>
-            </iframe>
-            <p style="font-size:0.72rem; color:var(--color-muted); margin-top:0.5rem;">
-              地図データ © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener" style="color:var(--color-accent);">OpenStreetMap</a> contributors
-            </p>
+            <!-- 実際はGoogle Mapsのiframeを入れる -->
+            <div class="access-map-placeholder" aria-label="地図（実装時はGoogle Mapsを埋め込み）">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+              <p>Map</p>
           </div>
         </div>
       </div>
